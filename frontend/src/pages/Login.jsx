@@ -6,6 +6,8 @@ import API from "../services/api";
 
 import { AuthContext } from "../context/AuthContext";
 
+import { Link } from "react-router-dom";
+
 const Login = () => {
 
   const navigate = useNavigate();
@@ -79,6 +81,12 @@ const Login = () => {
         <button type="submit">
           Login
         </button>
+
+        <br /><br />
+
+        <p>
+          New user? <Link to="/signup">Sign up here</Link>
+        </p>
 
       </form>
 
