@@ -12,7 +12,14 @@ const dashboardRoutes = require("./routes/dashboardRoutes");
 
 const app = express();
 
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://your-frontend.vercel.app"
+  ],
+  credentials: true,
+}));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
