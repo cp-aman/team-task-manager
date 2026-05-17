@@ -16,7 +16,7 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://your-frontend.vercel.app"
+    "https://team-task-manager-production-875e.up.railway.app/"
   ],
   credentials: true,
 }));
